@@ -26,9 +26,9 @@ const FeaturedPosts = () => {
             width={350}
             height={250}
             className=" mb-4 "></Image>
-          <h4 className=" ${montserrat.className}  text-xl font-bold mb-2 text-[#252B42]">Loudest à la Madison #1 (L'integral)</h4>
+          <h4 className=" ${montserrat.className}  text-xl font-bold mb-2 text-[#252B42]">Loudest à la Madison #1 (L&apos;integral)</h4>
           <p className=" ${montserrat.className}   text-[#737373]] mb-4">
-            We focus on ergonomics and meeting you where you work. It's only a keystroke away.
+            We focus on ergonomics and meeting you where you work. It&apos;s only a keystroke away.
           </p>
           
           <div className="flex items-center mt-10">
@@ -69,9 +69,9 @@ const FeaturedPosts = () => {
             height={250}
             className="mb-4 "
           />
-          <h4 className="text-xl font-bold mb-2 text-[#252B42]">Loudest à la Madison #1 (L'integral)</h4>
+          <h4 className="text-xl font-bold mb-2 text-[#252B42]">Loudest à la Madison #1 (L&apos;integral)</h4>
           <p className="text-gray-700 mb-4">
-            We focus on ergonomics and meeting you where you work. It's only a keystroke away.
+            We focus on ergonomics and meeting you where you work. It&apos;s only a keystroke away.
           </p>
           <br />
           <div className="flex items-center">

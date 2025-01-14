@@ -7,7 +7,6 @@ import About1 from "../components/about1";
 export default function Home() {
   return (
     <div>
-    <SecondHeader/>
     <About1/>
     <About/>
     <Logo/>

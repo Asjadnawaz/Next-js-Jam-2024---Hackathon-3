@@ -1,31 +1,30 @@
 'use client';
 
-import { useSearchParams } from 'next/navigation';
+import { useParams } from 'next/navigation';
 import { products } from '../../components/BestProducts'; // Adjust the import path as needed
-import FloatingPage2 from '../../components/FloatingPage2';
+import ProductDetails from '../../components/ProductDetails';
 
 const ProductPage = () => {
-  const searchParams = useSearchParams();
-  const id = searchParams.get('id');
-  
-  // Log the id to debug
+  const { id } = useParams(); // Extract the dynamic route parameter
+
+  // Log the ID for debugging
   console.log('Product ID:', id);
-  
+
   if (!id) {
     return <div>No ID provided</div>; // Handle case where no ID is provided
   }
 
-  // Assuming that `id` is a string in the URL, make sure we handle the comparison correctly
-  const product = products.find((product: any) => product.id === parseInt(id as string));
+  // Convert `id` to a number for comparison with product IDs
+  const product = products.find((product: any) => product.id === parseInt(id, 10));
   
-  console.log('Product:', product); // Check if the product is found
-  
+  console.log('Product:', product); // Log the product for debugging
+
   if (!product) {
-    return <div>Product not found</div>;
+    return <div>Product not found</div>; // Handle case where product is not found
   }
 
   return (
-    <FloatingPage2
+    <ProductDetails
       title={product.title}
       price={product.price}
       originalPrice={product.originalPrice}

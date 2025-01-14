@@ -3,6 +3,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Montserrat } from 'next/font/google';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import SecondHeader from "./components/SecondHeader";
+import FirstHeader from "./components/FirstHeader";
 
 
 const montserrat = Montserrat({
@@ -36,6 +38,8 @@ export default function RootLayout({
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         className={`${montserrat.className} ${montserrat.className} antialiased`}
       >
+        <FirstHeader/>
+        <SecondHeader/>
         {children}
       </body>
     </html>

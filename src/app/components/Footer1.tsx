@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Footer() {
     return (
       <footer className="bg-gray-50 text-gray-800 border-t border-gray-200">
@@ -9,15 +11,15 @@ export default function Footer() {
   
             {/* Social Media Icons */}
             <div className="flex space-x-4">
-              <a href="#" className="p-2 bg-[#FAFAFA] rounded-full hover:bg-blue-200">
-                <img src="/images/Fb.png" alt="Facebook" className="w-5 h-5" />
-              </a>
-              <a href="#" className="p-2 bg-[#FAFAFA] rounded-full hover:bg-blue-200">
-                <img src="/images/Insta.png" alt="Instagram" className="w-5 h-5" />
-              </a>
-              <a href="#" className="p-2 bg-[#FAFAFA] rounded-full hover:bg-blue-200">
-                <img src="/images/Twitter.png" alt="Twitter" className="w-5 h-5" />
-              </a>
+                <a href="#" className="p-2 bg-[#FAFAFA] rounded-full hover:bg-blue-200">
+                <Image src="/images/Fb.png" alt="Facebook" width={20} height={20} />
+                </a>
+                <a href="#" className="p-2 bg-[#FAFAFA] rounded-full hover:bg-blue-200">
+                <Image src="/images/Insta.png" alt="Instagram" width={20} height={20} />
+                </a>
+                <a href="#" className="p-2 bg-[#FAFAFA] rounded-full hover:bg-blue-200">
+                <Image src="/images/Twitter.png" alt="Twitter" width={20} height={20} />
+                </a>
             </div>
           </div>
   

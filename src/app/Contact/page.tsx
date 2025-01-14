@@ -6,8 +6,6 @@ import NavBar from "../components/NavBar";
 function Contact(){
     return(
         <div>
-            <NavBar/>
-        <SecondHeader/>
           
         <div className="w-full sm:h-full md:h-[500px] sm:mt-3 md:mt-0 sm:mb-8 md:mb-0 flex justify-center items-center ">
              <div className="sm:w-full md:w-[90%]  flex sm:flex-col md:flex-row gap-7 ">

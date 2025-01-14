@@ -12,8 +12,6 @@ import FeaturedPosts from "./components/FeaturedPost";
 export default function Home() {
   return (
     <div>
-      <FirstHeader/>
-      <SecondHeader/>
       <HeroSection/>
       <EditorPick/>
       <BestProducts/>
