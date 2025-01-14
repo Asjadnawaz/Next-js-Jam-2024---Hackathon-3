@@ -16,19 +16,19 @@ export default function ProductDetails({ title, price, originalPrice, imageUrl, 
 
     <div className=' container h-[598px] bg-[#FAFAFA]'>
       <div className='container mx-[55px] h-[598px]  overflow-y-hidden'>
-        <div className='flex  overflow-y-hidden gap-[50px]'>
+        <div className='flex  overflow-y-hidden gap-[130px]'>
         <Image
             src={imageUrl}
             alt={title}
             width={506}
             height={546}
-            className='rounded-sm h-[full] w-[506px]'
+            className='rounded-xl h-[full] w-[506px]'
 
         />
             <div className="w-[530px] h-[471px] px-[15px] py-[15px] place-content-right">
             <div className='w-[500px] h-[441px] flex flex-col gap-[20px]'>
               <div className='flex flex-col gap-[12px]'>
-                <h1 className='font-[400] text-[20px]'>{title}</h1>
+                <h1 className='font-[600] text-[20px] '>{title}</h1>
                 <Image
                   src={'/images/Reviews.png'}
                   alt="Reviews"
@@ -57,17 +57,17 @@ export default function ProductDetails({ title, price, originalPrice, imageUrl, 
                   <i className="bi bi-circle-fill text-[#252B42] h-[30px] w-[30px] text-[30px]"></i>
                   </div>
                   <div className='flex flex-row gap-[10px]'>
-                    <div className='bg-[#23A6F0] w-[148px] h-[44px] flex items-center justify-center rounded-[5px] cursor-pointer'>
+                    <div className='bg-[#23A6F0] hover:bg-[#2e7292] w-[148px] h-[44px] flex items-center justify-center rounded-[5px] cursor-pointer'>
                       <h1 className='text-white text-[14px] font-[700]'>Select Option</h1>
                     </div>
                     <div className='flex flex-row gap-[10px]'>
-                    <div className='flex items-center justify-center bg-white w-[40px] h-[40px] border-2 border-[#E8E8E8] rounded-full'>
+                    <div className='flex items-center justify-center bg-white hover:bg-gray-200 w-[40px] h-[40px] border-2 border-[#E8E8E8] hover:border-[#c5c5c5] cursor-pointer rounded-full'>
                       <i className="bi bi-heart h-[20px] w-[20px] text-center place-content-center"></i>
                     </div>
-                    <div className='flex items-center justify-center w-[40px] h-[40px] border-2 border-[#E8E8E8] rounded-full'>
+                    <div className='flex items-center bg-white hover:bg-gray-200 justify-center w-[40px] h-[40px] border-2 border-[#E8E8E8] hover:border-[#c5c5c5] cursor-pointer rounded-full'>
                       <i className="bi bi-cart h-[20px] w-[20px] text-center place-content-center"></i>
                     </div>
-                    <div className='flex items-center justify-center w-[40px] h-[40px] border-2 border-[#E8E8E8] rounded-full'>
+                    <div className='flex items-center justify-center bg-white hover:bg-gray-200 w-[40px] h-[40px] border-2 border-[#E8E8E8] hover:border-[#c5c5c5] cursor-pointer rounded-full'>
                       <i className="bi bi-eye-fill h-[20px] w-[20px] text-center place-content-center"></i>
                     </div>
                     </div>
