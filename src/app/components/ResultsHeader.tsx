@@ -4,7 +4,7 @@ const ResultsHeader = () => {
   return (
     <div className="flex items-center justify-between p-4 bg-white rounded-lg shadow-md">
       <div className="flex items-center">
-        <span className="text-gray-600 font-medium text-[#737373] ml-[100px] ${montserrat.className} text-[14px]">Showing all 12 results</span>
+        <span className=" font-medium text-[#737373] ml-[100px] ${montserrat.className} text-[14px]">Showing all 12 results</span>
       </div>
       <div className="flex items-center">
         <div className="mr-4">
