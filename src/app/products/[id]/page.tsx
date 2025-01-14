@@ -5,7 +5,7 @@ import { products } from '../../components/BestProducts'; // Adjust the import p
 import ProductDetails from '../../components/ProductDetails';
 
 const ProductPage = () => {
-  const { id } = useParams(); // Extract the dynamic route parameter
+  const { id }:any = useParams(); // Extract the dynamic route parameter
 
   // Log the ID for debugging
   console.log('Product ID:', id);
