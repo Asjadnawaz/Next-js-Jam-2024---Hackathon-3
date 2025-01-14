@@ -1,11 +1,16 @@
+'use client';
+
 // import { ChevronDown } from 'lucide-react';
 import React from 'react'
 import Link from 'next/link';
+import {usePathname} from 'next/navigation';
 
 
 const FirstHeader = () => {
+  const pathname = usePathname();
+  const isProductPage = pathname.includes('/product');
   return (
-    <div className="bg-[#252B42] items-center text-white h-[50px] px-2 py-1 pt-2 xs:hidden md:hidden lg:block sm:hidden">
+    <div className= {`transition-colors duration-300 ${(isProductPage) ? 'bg-[#23856D]' : 'bg-[#252B42]'} items-center text-white h-[50px] px-2 py-1 pt-2 xs:hidden md:hidden lg:block sm:hidden`} >
     <div className="container mt-[-9px] mx-auto px-4 flex justify-between items-center text-sm">
       {/* Contact Info */}
       <div className="flex items-center space-x-4 w-[700px] p-[10px] gap-5">

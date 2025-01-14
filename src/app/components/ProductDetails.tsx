@@ -41,7 +41,7 @@ export default function ProductDetails({ title, price, originalPrice, imageUrl, 
               <div className='flex flex-col gap-[32px]'>
               <div className='flex flex-col gap-[5px]'>
                 <h1 className='font-[700] text-[24px]'>{originalPrice}</h1>
-                <p className='text-[#737373] font-[700] text-[14px]'>Avaibility&nbsp;: <span className='text-[#23A6F0]'>In Stock</span></p>
+                <p className='text-[#737373] font-[700] text-[14px]'>Availability&nbsp;: <span className='text-[#23A6F0]'>In Stock</span></p>
               </div>
               <div>
                 <div className='flex flex-col gap-[29px]'>
